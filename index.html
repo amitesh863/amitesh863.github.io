@@ -52,7 +52,7 @@
       <h2 class="section-title">Experience</h2>
       <!-- JPMorganChase -->
       <div class="card">
-        <h3>JPMorganChase, Senior Data Scientist</h3>
+        <h3>JPMorganChase, Data Scientist Associate Senior</h3>
         <time>September 2024 – Present</time>
         <p>Working on large language models (LLMs), generative AI, and agentic frameworks to push the boundaries of AI capabilities.</p>
       </div>
@@ -252,10 +252,14 @@
     });
     
     // Existing IntersectionObserver for active nav link highlighting
+    const options = {
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0
+    };
+
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll("nav ul li a");
-    const options = { threshold: 0.3 };
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -265,8 +269,10 @@
         }
       });
     }, options);
-    
+
     sections.forEach(section => observer.observe(section));
+    
+
   </script>
 </body>
 </html>
