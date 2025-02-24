@@ -82,6 +82,7 @@ header p {
 section {
   padding: 2em;
   background-color: #000;
+  scroll-margin-top: 80px;
 }
 .section-title {
   text-align: center;
