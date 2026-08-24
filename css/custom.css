@@ -150,6 +150,8 @@ ul {
   text-decoration: underline;
   color: #66B2FF;
   transition: color 0.3s ease;
+  overflow-wrap: break-word;
+  word-break: break_word;
 }
 .hyperlink:hover {
   color: #007BFF;
